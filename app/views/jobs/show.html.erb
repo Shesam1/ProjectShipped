@@ -1,0 +1,52 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<div class="ShadowBox">
+
+<center><h1 class= "section-heading" style="color:green;font-size:300%;font-family:'Contrail One',cursive; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);">Boats</h1>
+
+<p>
+  <strong>Boat:</strong>
+  <%= @job.boat_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @job.status %>
+</p>
+
+<p>
+  <strong>Load amount:</strong>
+  <%= @job.load_amount %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @job.sender_id %>
+</p>
+
+<p>
+  <strong>Buyer:</strong>
+  <%= @job.buyer_id %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @job.cost %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @job.origin %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @job.destination %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>
+
+</div>

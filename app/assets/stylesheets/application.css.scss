@@ -1,0 +1,354 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: url('https://i.ytimg.com/vi/JSyRDwwBdlc/maxresdefault.jpg');
+  background-size: cover;
+  background-repeat: 100%;
+  z-index:-2;
+  margin-left: 10%;
+  height: 700px;
+  width: 96%;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.ShadowBox{
+  position: absolute;
+  height: 400px;
+  width: 96%;
+  font-family:Helvetica;
+  background-color: white;
+  opacity: .6;
+  /*background:rgba(0,0,0,0.30);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  // text-align: center;
+  // z-index: -1;
+}
+
+.ShadowBoxJobs{
+  position: absolute;
+  height: 600px;
+  width: 96%;
+  font-family:Helvetica;
+  background-color: white;
+  opacity: .6;
+  /*background:rgba(0,0,0,0.30);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  // text-align: center;
+  // z-index: -1;
+}
+.ShadowBoxBoats{
+  position: absolute;
+  height: 600px;
+  width: 96%;
+  font-family:Helvetica;
+  background-color: white;
+  opacity: .6;
+  /*background:rgba(0,0,0,0.30);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  // text-align: center;
+  // z-index: -1;
+}
+
+/*nav*/
+
+
+//html{
+//background-color: lightgray;
+//}
+
+#navRight_style {
+          float:right;
+        }
+
+        #jobText {
+          font-size: 100%;
+        }
+
+ul {
+   list-style-type: none;
+   margin: 12;
+   padding: 50;
+   overflow: hidden;
+   border: 1px solid #e7e7e7;
+   background-color: #f3f3f3;
+
+}
+
+
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: #666;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover:not(.active) {
+   background-color: brown;
+}
+
+li a.active {
+   color: white;
+   background-color: brown;
+}
+
+.boats_form {
+  font-size: 100px;
+  background-color: grey;
+  text-align: center;
+}
+
+.section_heading {
+  font-size: 30px;
+  // background-color: lightblue;
+  // border-style: solid;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+* {
+  font-family:'Contrail One',cursive;
+
+}
+
+
+//.form-group{
+//display: inline;
+//padding-right: 600px;
+//}
+
+
+/*//boat page table styles*/
+
+#boat_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#boat_style  td, #boat_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+//#boat_style tr:nth-child(even){background-color: #f2f2f2;}
+
+//#boat_style tr:hover {background-color: #ddd;}
+
+#boat_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//company table styles
+
+#company_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#company_style  td, #company_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#company_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//customer table styles
+
+#customer_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customer_style  td, #company_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#customer_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//jobs table styles
+
+#jobs_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#jobs_style  td, #jobs_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#jobs_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//home styles
+#home_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#home_style  td, #home_style  th {
+    border: px solid blue;
+    padding: 8px;
+}
+
+
+
+#home_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//send message button on home page
+
+
+#sendMessageButton {
+
+  font-size: 100%;
+background-color: brown;
+}
+
+//dashboard page styles
+
+
+
+
+#dashboard_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dashboard_style   td, #dashboard_style   th {
+    // border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#dashboard_style   th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    // background-color: brown;
+    color: green;
+}
+
+// new boat styles
+
+
+
+
+#new_boat_style {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#new_boat_style  td, #new_boat_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+#new_boat_style  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//forms for new styles
+
+.actions {
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.field {
+  text-align: center;
+
+  font-size: 25px;
+  text-align: center;
+align-items: center;
+}
+
+
+.element.style {
+
+font-size: 25px;
+text-align: center;
+
+}
+
+input[type="file"] {
+  display: inline;
+}

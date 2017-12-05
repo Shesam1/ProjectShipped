@@ -1,0 +1,45 @@
+<div class="ShadowBox">
+
+<div  class="section_heading">
+
+<center><h1 class= "section-heading" style="color:green;font-size:100%;font-family:'Contrail One',cursive;">My Dashboard</h1>
+
+  <table id="dashboard_style">
+    <thead>
+
+      <tr>
+        <%= current_company.email %>
+      </tr>
+
+      <tr>
+        <th class= "section-heading" style="color:green;font-size:100%;font-family:'Contrail One',cursive;">My Boat Fleet</th>
+          <% @boats.each do |boat| %>
+        <th><%= boat.name %></th>
+        <% end %>
+      </tr> 
+
+      <tr>
+        <th class= "section-heading" style="color:green;font-size:100%;font-family:'Contrail One',cursive;">My Shipments</th>
+          <% @jobs.each do |jobs| %>
+        <th><%= jobs.id %></th>
+        <th><%= jobs.status %></th>
+        <% end %>
+        </tr> 
+
+    </thead>
+  </table>
+</center>
+
+
+<center><h1 class= "section-heading" style="color:green;font-weight:bolder;font-size:100%;font-family:'Contrail One',cursive; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);">Select Option Below</h1>
+
+  <%= link_to new_job_path do %>
+    <button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">New Shipment</button>
+  <% end %>
+  <%= link_to new_boat_path do %>
+    <button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">New Boat</button>
+  <% end %>
+
+</center>
+</div>
+  </div>

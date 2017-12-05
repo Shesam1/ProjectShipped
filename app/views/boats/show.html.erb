@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<div class="ShadowBoxBoats">
+
+<p>
+  <strong>Name:</strong>
+  <%= @boat.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @boat.size %>
+</p>
+
+<p>
+  <strong>Max load:</strong>
+  <%= @boat.max_load %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag @boat.photo.url (:medium)%>
+</p>
+
+<p>
+<strong>Assign jobs:</strong>
+  <%= @boat.assign_jobs %>
+<%= link_to 'Create Job for this Boat', new_job_path  %>
+</p>
+<br>
+
+<%= link_to 'Edit', edit_boat_path(@boat) %> |
+<%= link_to 'Back', boats_path %>
+
+</div>

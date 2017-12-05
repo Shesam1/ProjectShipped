@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  size: MyString
+  max_load: 1
+  photo: 
+  assign_jobs: 1
+  company: one
+
+two:
+  name: MyString
+  size: MyString
+  max_load: 1
+  photo: 
+  assign_jobs: 1
+  company: two
